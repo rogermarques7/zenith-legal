@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — Zenith</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<style>
+  /* Paleta do app (lib/core/constants/app_colors.dart) */
+  :root {
+    --bg: #050507;
+    --surface: #0B0B12;
+    --border: #1A1A28;
+    --text: #F5F5F7;
+    --text-2: #8B8B95;
+    --text-3: #5A5A68;
+    --roxo: #A855F7;
+    --roxo-claro: #C084FC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  header.topo {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 18px;
+    margin-bottom: 34px;
+  }
+  .marca {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: .5px;
+    color: var(--roxo-claro);
+    text-decoration: none;
+  }
+  nav.topo-links { margin-top: 10px; font-size: 14px; }
+  nav.topo-links a { color: var(--text-2); text-decoration: none; margin-right: 16px; }
+  nav.topo-links a:hover { color: var(--roxo-claro); text-decoration: underline; }
+
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; font-weight: 800; }
+  h2 {
+    font-size: 21px;
+    margin: 40px 0 10px;
+    font-weight: 700;
+    color: var(--roxo-claro);
+  }
+  h3 { font-size: 17px; margin: 26px 0 8px; font-weight: 700; }
+  p, li { color: #D8D8DE; }
+  strong { color: var(--text); }
+  a { color: var(--roxo); }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 34px 0; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: .9em;
+    color: var(--roxo-claro);
+  }
+  blockquote {
+    margin: 22px 0;
+    padding: 12px 18px;
+    border-left: 3px solid var(--roxo);
+    background: var(--surface);
+    border-radius: 0 8px 8px 0;
+    color: var(--text-2);
+  }
+  blockquote p { color: var(--text-2); margin: 8px 0; }
+
+  /* Tabelas: rolam dentro da própria caixa, nunca empurram a página */
+  .tabela { overflow-x: auto; margin: 20px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 460px; }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 9px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: var(--surface); color: var(--text); font-weight: 700; }
+  td { color: #D8D8DE; }
+
+  footer.rodape {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-3);
+  }
+  footer.rodape a { color: var(--text-2); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topo">
+      <a class="marca" href="{{ '/' | relative_url }}">ZENITH</a>
+      <nav class="topo-links">
+        <a href="{{ '/privacidade.html' | relative_url }}">Privacidade</a>
+        <a href="{{ '/termos.html' | relative_url }}">Termos de uso</a>
+        <a href="{{ '/excluir-conta.html' | relative_url }}">Excluir conta</a>
+      </nav>
+    </header>
+
+    {{ content }}
+
+    <footer class="rodape">
+      Zenith — aplicativo de acompanhamento de saúde, treino e alimentação.<br>
+      Contato: <a href="mailto:rogerio.mota.marques21@gmail.com">rogerio.mota.marques21@gmail.com</a>
+    </footer>
+  </div>
+
+  <script>
+    // Tabela larga rola dentro de si mesma em vez de espremer a página no
+    // celular. O kramdown não deixa envolver a tabela pelo markdown, então é
+    // aqui.
+    document.querySelectorAll('table').forEach(function (t) {
+      var box = document.createElement('div');
+      box.className = 'tabela';
+      t.parentNode.insertBefore(box, t);
+      box.appendChild(t);
+    });
+  </script>
+</body>
+</html>
