@@ -1,0 +1,11 @@
+# Configuração do GitHub Pages para as páginas legais do Zenith.
+#
+# O tema vem do _layouts/default.html deste próprio repositório — não usamos
+# tema pronto do GitHub porque as páginas precisam parecer o app (fundo escuro,
+# roxo do Zenith), e porque um tema externo pode mudar debaixo da gente.
+title: Zenith — Documentos legais
+description: Política de privacidade, termos de uso e exclusão de conta do aplicativo Zenith.
+lang: pt-BR
+
+# O Jekyll do GitHub Pages não precisa de mais nada: qualquer .md com front
+# matter (o bloco entre --- no topo) vira .html com o mesmo nome.
