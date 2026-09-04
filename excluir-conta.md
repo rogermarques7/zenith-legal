@@ -53,6 +53,35 @@ e descartados no mesmo instante, então não há o que apagar.
 
 ---
 
+## Apagar só uma parte dos seus dados
+
+Você não precisa excluir a conta inteira para apagar alguma coisa.
+
+### Na tela, agora
+
+Abra o registro e use a opção de apagar. Some do app e **some do banco**:
+
+- **medidas do corpo** (cada medição, uma a uma);
+- **noites de sono**;
+- **treinos** e as sessões concluídas;
+- **dias de descanso** e itens do seu cronograma.
+
+### Por e-mail, para o resto
+
+Refeições e suplementos saem da sua lista quando você os apaga, mas o registro
+continua guardado no banco. Para apagá-los de verdade — ou qualquer outro dado
+que você queira remover — escreva para **rogerio.mota.marques21@gmail.com**, do
+**mesmo e-mail que você usa para entrar no Zenith**, com o assunto **"Excluir
+alguns dados"** e diga o que quer apagar.
+
+Respondemos em até **15 dias**, que é o prazo da LGPD.
+
+**O que acontece:** apagamos exatamente o que você pediu, de forma definitiva, e
+o resto da sua conta continua como estava. Não fica cópia guardada — o plano de
+banco de dados que usamos hoje não mantém cópias de segurança automáticas.
+
+---
+
 ## O que NÃO acontece
 
 - **Excluir a conta não cancela uma assinatura**, se você tiver uma. Assinatura
