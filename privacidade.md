@@ -6,7 +6,7 @@ description: "Como o Zenith coleta, usa e protege os seus dados."
 
 # Política de Privacidade — Zenith
 
-**Última atualização:** 31 de agosto de 2026
+**Última atualização:** 4 de setembro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -67,6 +67,13 @@ mais.
   nenhum — o aparelho lê a variação de cor e devolve o número.
 - **Refeições:** o que você comeu, quando, e as calorias, proteínas,
   carboidratos e gorduras.
+
+**Sobre o avatar 3D:** o boneco que o app mostra **não é uma imagem sua**. Ele é
+um modelo 3D genérico, que já vem dentro do aplicativo, deformado a partir das
+medidas que você digitou. **Nenhuma foto, nenhum escaneamento e nenhum dado
+biométrico de identificação** entram nessa conta — o avatar não reconhece
+ninguém e não serve para identificar você. O que fica guardado são as **medidas**
+listadas acima; a figura é desenhada no seu aparelho a partir delas.
 
 ### 2.4 Prontuário (opcional, e você escolhe se preenche)
 

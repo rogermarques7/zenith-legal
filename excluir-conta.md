@@ -6,7 +6,7 @@ description: "Como apagar sua conta do Zenith e todos os seus dados."
 
 # Excluir sua conta do Zenith
 
-**Última atualização:** 31 de agosto de 2026
+**Última atualização:** 4 de setembro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---

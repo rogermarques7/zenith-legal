@@ -6,7 +6,7 @@ description: "As regras de uso do aplicativo Zenith."
 
 # Termos de Uso — Zenith
 
-**Última atualização:** 31 de agosto de 2026
+**Última atualização:** 4 de setembro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -56,6 +56,27 @@ próprios limites — inclusive por parar um exercício que dói.
 Os batimentos cardíacos e a oxigenação medidos pela câmera do celular são
 **estimativas de bem-estar**, não medição clínica. Não use esses números para
 tomar decisão de saúde.
+
+### Sobre o avatar 3D
+
+O avatar 3D que aparece no app **não é você**. Ele é um **modelo genérico**, o
+mesmo para todo mundo, deformado por computador a partir das medidas que **você
+mesmo digitou** — peso, altura e as circunferências do corpo.
+
+Isso quer dizer que:
+
+- **não é uma foto sua**, não é escaneamento do seu corpo e não é feito a partir
+  de imagem nenhuma;
+- **é uma ilustração aproximada**, não um retrato. Duas pessoas com as mesmas
+  medidas veem o mesmo avatar, e o formato real do seu corpo não cabe em doze
+  números;
+- **ele vale exatamente o que as medidas valem.** Medida errada, avatar errado —
+  e a fita métrica na mão de cada um erra alguns centímetros;
+- a mudança do avatar ao longo do tempo serve para você **enxergar a direção**
+  da sua evolução. Não é laudo, nem prova de composição corporal.
+
+Não use o avatar para tomar decisão de saúde, e não o confunda com exame de
+composição corporal (como bioimpedância ou DEXA), que é outra coisa.
 
 ---
 
