@@ -6,7 +6,7 @@ description: "Como o Zenith coleta, usa e protege os seus dados."
 
 # Política de Privacidade — Zenith
 
-**Última atualização:** 4 de setembro de 2026
+**Última atualização:** 7 de outubro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -160,9 +160,15 @@ prestam serviço para o app funcionar — o que a LGPD chama de **operadores**:
 | Empresa | O que ela faz para o Zenith | O que ela recebe |
 |---|---|---|
 | **Supabase** | Guarda o banco de dados, cuida da autenticação e roda as funções do servidor | Tudo que está na seção 2, exceto fotos e áudio |
-| **Google** | Login (Google Sign-In) e o assistente de voz do Treino Assistido | E-mail e nome para o login; áudio e imagens durante o treino assistido; o exercício e a série do momento |
-| **OpenAI** | Lê a foto da refeição e do rótulo, transcreve o áudio ditado e escreve os avisos do dia | A foto, o áudio, e os seus números de treino, sono, água e alimentação |
-| **Anthropic** | Escreve o plano do ciclo de 30 dias e o relatório mensal | Seus números de treino, sono, água, alimentação, medidas e o prontuário |
+| **Google** | Login (Google Sign-In), o assistente de voz do Treino Assistido e o laudo do treino; pode também escrever o relatório mensal (ver abaixo) | E-mail e nome para o login; áudio e imagens durante o treino assistido; o exercício e a série do momento; para o relatório mensal, os mesmos dados da linha da OpenAI |
+| **OpenAI** | Lê a foto da refeição e do rótulo, transcreve o áudio ditado, escreve os avisos do dia e, hoje, o plano do ciclo de 30 dias e o relatório mensal | A foto, o áudio, e os seus números de treino, sono, água, alimentação, medidas e o prontuário |
+| **Anthropic** | Pode escrever o plano do ciclo de 30 dias e o relatório mensal (ver abaixo) | Seus números de treino, sono, água, alimentação, medidas e o prontuário |
+
+**Quem escreve o plano e o relatório pode mudar.** Essas duas tarefas são feitas
+por **uma** das empresas de inteligência artificial da tabela — OpenAI,
+Anthropic ou Google —, e o Zenith pode alternar entre elas para manter o serviço
+funcionando. Qualquer uma delas recebe exatamente os mesmos dados, descritos
+acima, e nenhuma empresa fora desta tabela recebe.
 
 **O que vai para a inteligência artificial e o que não vai:** vão os seus
 números e o seu prontuário — porque é isso que faz a recomendação ser sua e não
