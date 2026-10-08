@@ -6,7 +6,7 @@ description: "As regras de uso do aplicativo Zenith."
 
 # Termos de Uso — Zenith
 
-**Última atualização:** 4 de setembro de 2026
+**Última atualização:** 8 de outubro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -162,6 +162,10 @@ O Zenith tem recursos **Premium**. Quando a assinatura estiver disponível:
 - a renovação é automática até você cancelar, e o cancelamento se faz na própria
   loja;
 - reembolso segue a política da loja;
+- **a assinatura pertence à conta do Zenith em que foi feita.** Ela não passa
+  para outra conta do Zenith — nem no mesmo aparelho, nem com a mesma conta da
+  loja. Quem quiser usar o Premium em outra conta assina de novo nela ou fala
+  com a gente pelo e-mail de contato;
 - cancelar mantém sua conta e seus dados — o que muda são os recursos Premium.
 
 Enquanto não houver cobrança dentro do app, nada nesta seção gera obrigação de
