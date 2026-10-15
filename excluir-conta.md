@@ -6,7 +6,7 @@ description: "Como apagar sua conta do Zenith e todos os seus dados."
 
 # Excluir sua conta do Zenith
 
-**Última atualização:** 4 de setembro de 2026
+**Última atualização:** 15 de outubro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -47,6 +47,12 @@ Tudo o que estava ligado à sua conta, de uma vez:
 Não fica cópia guardada: o plano de banco de dados que usamos hoje **não mantém
 cópias de segurança automáticas**, então quando a conta é excluída não sobra
 versão sua em backup nenhum.
+
+**A única exceção é o registro das compras da assinatura** (data, plano, valor e
+número do pedido), que a lei manda guardar — e ele fica **sem ligação com
+você**: o identificador da sua conta é apagado dele. O cadastro no RevenueCat (a
+empresa que confere a assinatura) também é apagado, automaticamente, em até 24
+horas. No seu celular, o app apaga o que guardava sobre você.
 
 Fotos de refeição e áudios ditados nunca chegam a ser guardados — eles são lidos
 e descartados no mesmo instante, então não há o que apagar.

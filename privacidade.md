@@ -6,7 +6,7 @@ description: "Como o Zenith coleta, usa e protege os seus dados."
 
 # Política de Privacidade — Zenith
 
-**Última atualização:** 7 de outubro de 2026
+**Última atualização:** 15 de outubro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -29,7 +29,7 @@ para quê.
 ## 2. O que o Zenith coleta
 
 Só existe uma forma de entrar no app: **sua conta Google**. O Zenith não cria
-senha, não pede senha e não guarda senha nenhuma.
+nem pede senha.
 
 ### 2.1 Dados da conta
 
@@ -115,7 +115,15 @@ repetições enquanto você treina.
   ligado àquela sessão de treino.
 - O recurso só liga quando você escolhe ligar, treino a treino.
 
-### 2.8 O que o Zenith NÃO coleta
+### 2.8 Assinatura Premium
+
+Quando você assina, o pagamento é feito pelo **Google Play** — o Zenith nunca
+vê o número do seu cartão nem outro dado de pagamento. O que o Zenith recebe é
+o **histórico de compras**: qual plano, quando, o valor, se renovou ou foi
+cancelado, e o número do pedido. Esse histórico passa pelo **RevenueCat**, a
+empresa que confere a assinatura para nós (seção 4).
+
+### 2.9 O que o Zenith NÃO coleta
 
 - **Não coletamos localização** — nem aproximada, nem precisa.
 - **Não acessamos contatos, agenda, fotos da galeria, SMS nem chamadas.**
@@ -146,6 +154,7 @@ qualquer decisão automatizada que produza efeito jurídico sobre você.
 |---|---|
 | Conta, perfil, uso do app | **Execução de contrato** (art. 7º, V) — sem eles não há app |
 | Dados de saúde, corpo, sono, prontuário, fotos e voz | **Consentimento específico e destacado** (art. 11, I) |
+| Histórico de compras da assinatura | **Execução de contrato** (art. 7º, V) e, depois da exclusão da conta, **cumprimento de obrigação legal** (art. 7º, II) |
 
 Você dá esse consentimento ao criar a conta e ao aceitar esta política. **Pode
 retirar quando quiser**, excluindo a conta dentro do app (seção 7).
@@ -160,15 +169,22 @@ prestam serviço para o app funcionar — o que a LGPD chama de **operadores**:
 | Empresa | O que ela faz para o Zenith | O que ela recebe |
 |---|---|---|
 | **Supabase** | Guarda o banco de dados, cuida da autenticação e roda as funções do servidor | Tudo que está na seção 2, exceto fotos e áudio |
-| **Google** | Login (Google Sign-In), o assistente de voz do Treino Assistido e o laudo do treino; pode também escrever o relatório mensal (ver abaixo) | E-mail e nome para o login; áudio e imagens durante o treino assistido; o exercício e a série do momento; para o relatório mensal, os mesmos dados da linha da OpenAI |
+| **Google** | Login (Google Sign-In) e o pagamento da assinatura (Google Play); quando o Treino Assistido estiver ligado, o assistente de voz e o laudo do treino; pode também escrever o relatório mensal (ver abaixo) | E-mail e nome para o login; a compra, para cobrar; áudio e imagens durante o treino assistido; o exercício e a série do momento; para o relatório mensal, os mesmos dados da linha da OpenAI |
 | **OpenAI** | Lê a foto da refeição e do rótulo, transcreve o áudio ditado, escreve os avisos do dia e, hoje, o plano do ciclo de 30 dias e o relatório mensal | A foto, o áudio, e os seus números de treino, sono, água, alimentação, medidas e o prontuário |
 | **Anthropic** | Pode escrever o plano do ciclo de 30 dias e o relatório mensal (ver abaixo) | Seus números de treino, sono, água, alimentação, medidas e o prontuário |
+| **RevenueCat** | Confere se a sua assinatura está ativa | Um identificador interno da sua conta (não o nome nem o e-mail) e o histórico de compras (seção 2.8) |
+| **Open Food Facts** | Base pública de alimentos, consultada quando você busca um produto pela marca | O termo que você digitou na busca. Como a consulta sai do seu aparelho, ela também vê o endereço de internet (IP) dele |
 
 **Quem escreve o plano e o relatório pode mudar.** Essas duas tarefas são feitas
 por **uma** das empresas de inteligência artificial da tabela — OpenAI,
 Anthropic ou Google —, e o Zenith pode alternar entre elas para manter o serviço
 funcionando. Qualquer uma delas recebe exatamente os mesmos dados, descritos
 acima, e nenhuma empresa fora desta tabela recebe.
+
+**Google só com contrato pago.** O plano gratuito da inteligência artificial do
+Google usa o conteúdo enviado para melhorar os produtos dele. Por isso nenhum
+dado seu vai para a inteligência artificial do Google — relatório mensal ou
+Treino Assistido — sem um contrato pago, em que isso não acontece.
 
 **O que vai para a inteligência artificial e o que não vai:** vão os seus
 números e o seu prontuário — porque é isso que faz a recomendação ser sua e não
@@ -201,6 +217,14 @@ você, não crie a conta — e, se já criou, exclua a conta pela seção 7.
 - **Quando você exclui a conta**, tudo é apagado do banco na hora — perfil,
   medidas, treinos, refeições, sono, água, suplementos, ciclos, planos e
   relatórios.
+- **A única exceção é o registro das compras da assinatura** (data, plano,
+  valor e número do pedido), que a lei manda guardar. Ele fica **sem ligação
+  com você**: o identificador da sua conta é apagado dele na exclusão. E
+  pedimos ao **RevenueCat** que apague o seu cadastro lá, automaticamente, em
+  até 24 horas.
+- **No seu aparelho:** ao sair da conta ou excluí-la, o app apaga o que guardava
+  sobre você no celular (preferências, avisos já vistos). Fica só o que é do
+  aparelho, como o som e o contador de passos.
 - **Cópias de segurança:** o plano de banco de dados que usamos hoje **não
   mantém cópias de segurança automáticas**. Na prática isso é bom para você:
   quando a conta é excluída, não sobra cópia sua guardada em lugar nenhum — a
@@ -240,8 +264,10 @@ dias.
   (HTTPS/TLS).
 - As chaves das empresas de inteligência artificial ficam **no servidor**, nunca
   dentro do aplicativo.
-- Não guardamos senha porque não existe senha: a identificação é a sua conta
-  Google.
+- O login é só pela sua conta Google: o app não cria nem pede senha.
+- O aplicativo não entra no backup automático do Android nem é copiado na
+  transferência para um celular novo: a sessão e as preferências ficam só no
+  aparelho em que você entrou.
 
 Nenhum sistema é 100% seguro. Se um dia acontecer um incidente que possa te
 causar risco ou dano relevante, **avisamos você e a ANPD**, como a lei manda
@@ -263,7 +289,8 @@ Termos de Uso.
 
 ## 10. Menores de idade
 
-O Zenith é destinado a pessoas com **16 anos ou mais**.
+O Zenith é destinado a pessoas com **16 anos ou mais**. O cadastro não é
+concluído com uma data de nascimento abaixo dessa idade.
 
 Se descobrirmos que uma conta pertence a alguém abaixo da idade mínima, ela é
 excluída.
