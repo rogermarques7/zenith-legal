@@ -6,7 +6,7 @@ description: "Como o Zenith coleta, usa e protege os seus dados."
 
 # Política de Privacidade — Zenith
 
-**Última atualização:** 15 de outubro de 2026
+**Última atualização:** 17 de outubro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -60,8 +60,7 @@ mais.
 - **Suplementos:** o que você toma, a dose, o horário e se tomou.
 - **Treinos:** exercícios, séries, repetições, carga, duração e sessões
   concluídas.
-- **Passos:** contados pelo **sensor do próprio aparelho**. O Zenith não lê o
-  Health Connect nem nenhum outro aplicativo de saúde.
+- **Passos:** lidos do **Health Connect**, se você permitir (veja logo abaixo).
 - **Batimentos cardíacos e oxigenação:** medidos com a **câmera do aparelho**,
   encostando o dedo na lente. A imagem não é guardada nem enviada para lugar
   nenhum — o aparelho lê a variação de cor e devolve o número.
@@ -74,6 +73,31 @@ medidas que você digitou. **Nenhuma foto, nenhum escaneamento e nenhum dado
 biométrico de identificação** entram nessa conta — o avatar não reconhece
 ninguém e não serve para identificar você. O que fica guardado são as **medidas**
 listadas acima; a figura é desenhada no seu aparelho a partir delas.
+
+#### Passos e o Health Connect
+
+O Health Connect é o local do Android onde os aplicativos de saúde do seu
+celular e do seu relógio guardam o que medem. Com a sua permissão, o Zenith lê
+de lá **um único tipo de dado: a contagem de passos** — e só lê, nunca escreve
+nada no Health Connect.
+
+- **Para quê:** mostrar seus passos do dia e dos últimos 7 dias, estimar a
+  distância e as calorias gastas caminhando, e entrar, junto com os seus outros
+  números, nas análises da inteligência artificial (seção 9).
+- **Para onde vai:** o total de passos de cada dia é gravado na sua conta, no
+  nosso banco de dados (Supabase, seção 4), e a média de passos vai para a
+  inteligência artificial que escreve seus relatórios e seu plano (seção 4).
+  Nenhum outro dado do Health Connect é lido.
+- **Quando:** só com o Zenith aberto. Ele não lê o Health Connect em segundo
+  plano.
+- **Você controla:** a permissão é pedida dentro do app e pode ser retirada a
+  qualquer momento nas configurações do Health Connect. Sem ela, o Zenith não
+  mostra passos. Os passos já gravados são apagados quando você exclui a conta
+  (seção 6).
+- O uso das informações recebidas do Health Connect segue a **Política de
+  Permissões do Health Connect**, incluindo os requisitos de **Uso Limitado**:
+  esses dados não são vendidos, não são usados para publicidade e só servem
+  para o próprio app funcionar e melhorar o que ele mostra para você.
 
 ### 2.4 Prontuário (opcional, e você escolhe se preenche)
 
@@ -170,8 +194,8 @@ prestam serviço para o app funcionar — o que a LGPD chama de **operadores**:
 |---|---|---|
 | **Supabase** | Guarda o banco de dados, cuida da autenticação e roda as funções do servidor | Tudo que está na seção 2, exceto fotos e áudio |
 | **Google** | Login (Google Sign-In) e o pagamento da assinatura (Google Play); quando o Treino Assistido estiver ligado, o assistente de voz e o laudo do treino; pode também escrever o relatório mensal (ver abaixo) | E-mail e nome para o login; a compra, para cobrar; áudio e imagens durante o treino assistido; o exercício e a série do momento; para o relatório mensal, os mesmos dados da linha da OpenAI |
-| **OpenAI** | Lê a foto da refeição e do rótulo, transcreve o áudio ditado, escreve os avisos do dia e, hoje, o plano do ciclo de 30 dias e o relatório mensal | A foto, o áudio, e os seus números de treino, sono, água, alimentação, medidas e o prontuário |
-| **Anthropic** | Pode escrever o plano do ciclo de 30 dias e o relatório mensal (ver abaixo) | Seus números de treino, sono, água, alimentação, medidas e o prontuário |
+| **OpenAI** | Lê a foto da refeição e do rótulo, transcreve o áudio ditado, escreve os avisos do dia e, hoje, o plano do ciclo de 30 dias e o relatório mensal | A foto, o áudio, e os seus números de treino, sono, água, alimentação, passos, medidas e o prontuário |
+| **Anthropic** | Pode escrever o plano do ciclo de 30 dias e o relatório mensal (ver abaixo) | Seus números de treino, sono, água, alimentação, passos, medidas e o prontuário |
 | **RevenueCat** | Confere se a sua assinatura está ativa | Um identificador interno da sua conta (não o nome nem o e-mail) e o histórico de compras (seção 2.8) |
 | **Open Food Facts** | Base pública de alimentos, consultada quando você busca um produto pela marca | O termo que você digitou na busca. Como a consulta sai do seu aparelho, ela também vê o endereço de internet (IP) dele |
 
@@ -215,8 +239,8 @@ você, não crie a conta — e, se já criou, exclua a conta pela seção 7.
 - **Enquanto sua conta existir.** O histórico é a razão de ser do app: sem os
   meses anteriores não há evolução para mostrar nem ciclo para comparar.
 - **Quando você exclui a conta**, tudo é apagado do banco na hora — perfil,
-  medidas, treinos, refeições, sono, água, suplementos, ciclos, planos e
-  relatórios.
+  medidas, treinos, refeições, sono, água, passos, suplementos, ciclos,
+  planos e relatórios.
 - **A única exceção é o registro das compras da assinatura** (data, plano,
   valor e número do pedido), que a lei manda guardar. Ele fica **sem ligação
   com você**: o identificador da sua conta é apagado dele na exclusão. E
@@ -224,7 +248,7 @@ você, não crie a conta — e, se já criou, exclua a conta pela seção 7.
   até 24 horas.
 - **No seu aparelho:** ao sair da conta ou excluí-la, o app apaga o que guardava
   sobre você no celular (preferências, avisos já vistos). Fica só o que é do
-  aparelho, como o som e o contador de passos.
+  aparelho, como o som.
 - **Cópias de segurança:** o plano de banco de dados que usamos hoje **não
   mantém cópias de segurança automáticas**. Na prática isso é bom para você:
   quando a conta é excluída, não sobra cópia sua guardada em lugar nenhum — a
