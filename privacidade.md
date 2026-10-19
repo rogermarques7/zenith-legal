@@ -65,9 +65,7 @@ mais.
 - **Passos:** lidos do **Health Connect**, se você permitir (veja logo abaixo).
 - **Batimentos cardíacos e oxigenação:** medidos com a **câmera do aparelho**,
   encostando o dedo na lente. A imagem não é guardada nem enviada para lugar
-  nenhum — o aparelho lê a variação de cor e devolve o número. Se você
-  permitir, a **frequência cardíaca de repouso** também é calculada a partir
-  das leituras do seu relógio, pelo Health Connect (veja logo abaixo).
+  nenhum — o aparelho lê a variação de cor e devolve o número.
 - **Refeições:** o que você comeu, quando, e as calorias, proteínas,
   carboidratos e gorduras.
 
@@ -78,24 +76,21 @@ biométrico de identificação** entram nessa conta — o avatar não reconhece
 ninguém e não serve para identificar você. O que fica guardado são as **medidas**
 listadas acima; a figura é desenhada no seu aparelho a partir delas.
 
-#### Health Connect: passos, sono e frequência cardíaca
+#### Health Connect: passos e sono
 
 O Health Connect é o local do Android onde os aplicativos de saúde do seu
 celular e do seu relógio guardam o que medem. Com a sua permissão, o Zenith lê
-de lá **três tipos de dado, e só eles** — e só lê, nunca escreve nada no
+de lá **dois tipos de dado, e só eles** — e só lê, nunca escreve nada no
 Health Connect:
 
 - **Passos:** o total de cada dia. Serve para mostrar seus passos do dia e dos
   últimos 7 dias e estimar a distância e as calorias gastas caminhando.
-- **Sono:** o horário em que você dormiu e acordou, como o relógio registrou.
-  A noite aparece na tela de Sono, onde você pode mantê-la, ajustar ou
-  descartar. Se você já tiver registrado aquela noite, vale o seu registro.
-- **Frequência cardíaca:** as leituras do relógio servem para calcular **um
-  número por dia**, a sua frequência cardíaca de repouso. As leituras em si
-  não são guardadas — só esse número.
-
-- **Para onde vai:** o total de passos, as noites de sono e a frequência de
-  repouso de cada dia são gravados na sua conta, no nosso banco de dados
+- **Sono:** o horário em que você dormiu e acordou, como o relógio registrou,
+  e os cochilos. A noite e o cochilo entram sozinhos na tela de Sono; se você
+  tiver anotado aquela noite à mão, passa a valer a do relógio — e você ainda
+  pode ajustar ou descartar.
+- **Para onde vai:** o total de passos e as noites de sono de cada dia são
+  gravados na sua conta, no nosso banco de dados
   (Supabase, seção 4), e entram, junto com os seus outros números, nas
   análises da inteligência artificial que escreve seus relatórios e seu plano
   (seções 4 e 9). Nenhum outro dado do Health Connect é lido.
@@ -104,8 +99,8 @@ Health Connect:
 - **Você controla:** a permissão é pedida dentro do app, cada tipo pode ser
   aceito ou recusado separadamente, e tudo pode ser retirado a qualquer
   momento nas configurações do Health Connect. Sem a permissão de passos, o
-  Zenith não mostra passos; sem as outras, sono e batimento seguem só com o
-  que você registra. O que já foi gravado é apagado quando você exclui a
+  Zenith não mostra passos; sem a de sono, o sono segue só com o que você
+  registra. O que já foi gravado é apagado quando você exclui a
   conta (seção 6).
 - O uso das informações recebidas do Health Connect segue a **Política de
   Permissões do Health Connect**, incluindo os requisitos de **Uso Limitado**:
@@ -207,8 +202,8 @@ prestam serviço para o app funcionar — o que a LGPD chama de **operadores**:
 |---|---|---|
 | **Supabase** | Guarda o banco de dados, cuida da autenticação e roda as funções do servidor | Tudo que está na seção 2, exceto fotos e áudio |
 | **Google** | Login (Google Sign-In) e o pagamento da assinatura (Google Play); quando o Treino Assistido estiver ligado, o assistente de voz e o laudo do treino; pode também escrever o relatório mensal (ver abaixo) | E-mail e nome para o login; a compra, para cobrar; áudio e imagens durante o treino assistido; o exercício e a série do momento; para o relatório mensal, os mesmos dados da linha da OpenAI |
-| **OpenAI** | Lê a foto da refeição e do rótulo, transcreve o áudio ditado, escreve os avisos do dia e, hoje, o plano do ciclo de 30 dias e o relatório mensal | A foto, o áudio, e os seus números de treino, sono, água, alimentação, passos, frequência cardíaca de repouso, medidas e o prontuário |
-| **Anthropic** | Pode escrever o plano do ciclo de 30 dias e o relatório mensal (ver abaixo) | Seus números de treino, sono, água, alimentação, passos, frequência cardíaca de repouso, medidas e o prontuário |
+| **OpenAI** | Lê a foto da refeição e do rótulo, transcreve o áudio ditado, escreve os avisos do dia e, hoje, o plano do ciclo de 30 dias e o relatório mensal | A foto, o áudio, e os seus números de treino, sono, água, alimentação, passos, medidas e o prontuário |
+| **Anthropic** | Pode escrever o plano do ciclo de 30 dias e o relatório mensal (ver abaixo) | Seus números de treino, sono, água, alimentação, passos, medidas e o prontuário |
 | **RevenueCat** | Confere se a sua assinatura está ativa | Um identificador interno da sua conta (não o nome nem o e-mail) e o histórico de compras (seção 2.8) |
 | **Open Food Facts** | Base pública de alimentos, consultada quando você busca um produto pela marca | O termo que você digitou na busca. Como a consulta sai do seu aparelho, ela também vê o endereço de internet (IP) dele |
 
