@@ -6,7 +6,7 @@ description: "Como o Zenith coleta, usa e protege os seus dados."
 
 # Política de Privacidade — Zenith
 
-**Última atualização:** 17 de outubro de 2026
+**Última atualização:** 31 de outubro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -22,7 +22,7 @@ somos o **controlador** dos seus dados: é a gente que decide o que é coletado 
 para quê.
 
 **Contato para qualquer assunto de privacidade:**
-**rogerio.mota.marques21@gmail.com**.
+**zenithassistente@gmail.com**.
 
 ---
 
@@ -282,7 +282,7 @@ confirmação** — não é um toque só, de propósito.
 
 Quase tudo é editável dentro do próprio app (perfil, medidas, refeições,
 treinos, suplementos). Para o que não for, ou para pedir uma cópia dos seus
-dados, escreva para **rogerio.mota.marques21@gmail.com** — respondemos em até 15
+dados, escreva para **zenithassistente@gmail.com** — respondemos em até 15
 dias.
 
 ---
@@ -339,7 +339,7 @@ pedida dentro do app.
 
 ## 12. Contato
 
-**rogerio.mota.marques21@gmail.com**
+**zenithassistente@gmail.com**
 
 Você também pode reclamar diretamente à **Autoridade Nacional de Proteção de
 Dados (ANPD)**: https://www.gov.br/anpd

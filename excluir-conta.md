@@ -6,7 +6,7 @@ description: "Como apagar sua conta do Zenith e todos os seus dados."
 
 # Excluir sua conta do Zenith
 
-**Última atualização:** 15 de outubro de 2026
+**Última atualização:** 31 de outubro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -25,7 +25,7 @@ A exclusão acontece na hora, e não tem volta.
 
 ## Se você já desinstalou o app
 
-Escreva para **rogerio.mota.marques21@gmail.com** com o assunto
+Escreva para **zenithassistente@gmail.com** com o assunto
 **"Excluir minha conta"**, do **mesmo e-mail que você usou para entrar no
 Zenith** — é assim que confirmamos que a conta é sua.
 
@@ -76,7 +76,7 @@ Abra o registro e use a opção de apagar. Some do app e **some do banco**:
 
 Refeições e suplementos saem da sua lista quando você os apaga, mas o registro
 continua guardado no banco. Para apagá-los de verdade — ou qualquer outro dado
-que você queira remover — escreva para **rogerio.mota.marques21@gmail.com**, do
+que você queira remover — escreva para **zenithassistente@gmail.com**, do
 **mesmo e-mail que você usa para entrar no Zenith**, com o assunto **"Excluir
 alguns dados"** e diga o que quer apagar.
 
@@ -100,7 +100,7 @@ banco de dados que usamos hoje não mantém cópias de segurança automáticas.
 
 ## Dúvidas
 
-**rogerio.mota.marques21@gmail.com**
+**zenithassistente@gmail.com**
 
 Veja também a [Política de Privacidade](privacidade.html) e os
 [Termos de Uso](termos.html).

@@ -6,7 +6,7 @@ description: "As regras de uso do aplicativo Zenith."
 
 # Termos de Uso — Zenith
 
-**Última atualização:** 8 de outubro de 2026
+**Última atualização:** 31 de outubro de 2026
 **Aplicativo:** Zenith (`com.zenith.app.zenith`)
 
 ---
@@ -18,7 +18,7 @@ Ao criar uma conta e usar o Zenith, você concorda com estes Termos e com a
 alguma parte, não use o app.
 
 O Zenith é operado por **Rogério Mota Marques**,
-**CPF 032.138.043-63**, contato **rogerio.mota.marques21@gmail.com**.
+**CPF 032.138.043-63**, contato **zenithassistente@gmail.com**.
 
 ---
 
@@ -216,4 +216,4 @@ direito do consumidor de escolher o foro do seu domicílio.
 
 ## 13. Contato
 
-**rogerio.mota.marques21@gmail.com**
+**zenithassistente@gmail.com**

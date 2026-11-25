@@ -19,4 +19,4 @@ são as regras de uso.
 
 ---
 
-Dúvidas sobre qualquer um deles: **rogerio.mota.marques21@gmail.com**
+Dúvidas sobre qualquer um deles: **zenithassistente@gmail.com**
